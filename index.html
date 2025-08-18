@@ -1,0 +1,47 @@
+<head>
+    <link rel="stylesheet" id="stylesheet" href="flattener_dark.css">
+    <script src="common.js"></script>
+</head>
+<body onload="load(this)">
+<div>
+    <div class="top">
+        <p id="introtext">
+            This website allows you to recursively flatten your JSONs.<br>
+            This is done in a way that guarantees MOMI compatibility for Fields of Mistria's <code>__fiddle__.json</code> derived files.<br>
+            Make sure you only include the <i>not flattened parts</i> in your input (example below).
+        </p>
+    </div>
+    <button id="displaymode" onclick="switchDisplay(this)">Light Mode</button>
+    <div class="left">
+        <textarea id="input">{
+    "ranching":{
+        "animals":{
+            "horse":{
+                "mounting":{
+                    "move_speed":2
+                }
+            }
+        }
+    }
+}</textarea>
+    </div>
+    <div class="middle">
+        <button id="compute" onclick="completeFiddle(this)">Compute!</button>
+    </div>
+    <div class="right">
+        <textarea readonly id="output"></textarea readonly>
+    </div>
+    
+    <div class="error">
+        <p id="errorlogs"></p>
+    </div>
+    <div class="bottom">
+        <p id="outrotext">Report issues over at <a href="https://github.com/FoMTinkering/Flattener/issues">https://github.com/FoMTinkering/Flattener/issues</a> if the error message states the algorithm made a mistake. Or just chek the GitHub page to help out with the organisation! <i style="opacity: 70%;">(not affiliated with NPCStudio)</i></p>
+    </div>
+    
+</div>
+</body>
+
+
+
+

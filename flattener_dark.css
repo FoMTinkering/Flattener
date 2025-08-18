@@ -1,0 +1,139 @@
+body {
+    background: hsl(222, 32%, 15%);
+}
+
+#introtext {
+    font-family:'Arial'; 
+    padding-left: 2%;
+    color:hsl(205, 65%, 90%);
+}
+
+#displaymode {
+    font-family:'Arial';  
+    position: absolute;
+    margin-left: 90%;
+    background-color:hsl(222, 32%, 15%);
+    color:hsl(205, 65%, 90%);
+    border-radius: 10%;
+    height:40px
+}
+
+.top {
+    position: absolute;
+    top:0%;
+    height:12%;
+    width:100%;
+    left:0%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+
+.left {
+    background-color: hsl(220, 38%, 12%);
+    position: absolute;
+    overflow: hidden;
+    top:12%;
+    height: 68%;
+    width: 43%;
+    left:2%;
+}
+
+.left textarea {
+  font-family:'Consolas';  
+  font-size:120%;
+  width:-webkit-fill-available;
+  background-clip: text;
+  color:hsl(205, 65%, 90%);
+  height:100%;
+  resize: none;
+  background-attachment:local;
+  border: none;
+  font-size: small;
+}
+
+.right {
+    background-color: hsl(220, 38%, 12%);
+    position: absolute;
+    overflow: hidden;
+    top:12%;
+    height: 68%;
+    width: 43%;
+    left:55%;
+}
+
+.right textarea {
+  font-family:'Consolas';  
+  font-size:120%;
+  width:-webkit-fill-available;
+  background-clip: text;
+  border:none;
+  color:hsl(205, 65%, 90%);
+  height:100%;
+  resize: none;
+  background-attachment:local;
+  font-size: small;
+}
+
+.middle {
+    position: absolute;
+    overflow: hidden;
+    top:10%;
+    height:70%;
+    width:10%;
+    left:45%;
+}
+
+#compute {
+    position: absolute;
+    left:10%;
+    object-fit:scale-down;
+    width: 80%;
+    aspect-ratio: 1;
+    background-color: hsl(222, 32%, 15%);
+    color: hsl(205, 65%, 90%);
+    border-radius: 50%;
+    border-width:5px;
+    bottom: 40%;
+}
+
+.error {
+    font-family:'Consolas';  
+    background-color: hsl(222, 35%, 7%);
+    color:crimson;
+    position: absolute;
+    bottom: 9%;
+    height:8%;
+    width:96%;
+    left:2%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+#errorlogs {
+    margin: 2%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0%;
+    height:10%;
+    width:100%;
+    left:0%;
+}
+
+#outrotext {
+    font-family:'Arial';  
+    font-style: italic;
+    padding-left: 2%;
+    color:hsl(205, 65%, 90%);
+}
+
+a {
+    color:hsl(192, 89%, 45%);
+    text-decoration: underline;
+}
+a:visited {
+    color:hsl(273, 83%, 59%);
+    text-decoration: underline;
+}
